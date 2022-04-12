@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AF6C"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="50dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="318dp"
+        android:layout_height="82dp"
+        android:background="#00804F"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Welcome to dollar PKR convertor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dAmount"
+        android:layout_width="386dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:hint="Enter amount in dollers"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/doller_pkr_picture" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="btnClick"
+        android:text="Convert to pkr"
+        app:backgroundTint="#00804F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
