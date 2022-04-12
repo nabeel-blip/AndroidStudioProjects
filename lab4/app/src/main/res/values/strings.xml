@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="retrive">Retrive</string>
+</resources>
