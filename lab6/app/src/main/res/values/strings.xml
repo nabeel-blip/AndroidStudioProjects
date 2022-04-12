@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="homeString">Home</string>
+    <string name="findString">Find</string>
+    <string name="favouriteString">Favourite</string>
+    <string name="followString">Follow the sigin</string>
+    <string name="insertEmoticonString">insert Emoticaon</string>
+    <string name="presssMeString">Presss Me</string>
+
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_follow"
+        android:icon="@drawable/follow_the_signs_1"
+        android:title="@string/followString"/>
+
+
+
+    <item
+        android:id="@+id/nav_emoticon"
+        android:icon="@drawable/insert_emoticon_1"
+        android:title="@string/insertEmoticonString"/>
+
+
+
+</menu>
