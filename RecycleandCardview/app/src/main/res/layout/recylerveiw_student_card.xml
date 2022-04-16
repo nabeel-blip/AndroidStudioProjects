@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark"
+    >
+
+
+    <TextView
+        android:id="@+id/studentCard_tv_heading"
+        android:layout_width="0dp"
+        android:layout_weight=".4"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Department:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/studentCard_tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:gravity="start"
+        android:text="dnabeel hasaskjife;asdkfj;asda;ksdjf sak;dfj"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        />
+</LinearLayout>

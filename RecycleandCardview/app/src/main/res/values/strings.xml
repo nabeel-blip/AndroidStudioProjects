@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recycle and Card view</string>
+    <string name="Addstudent">Add Student</string>
+    <string name="dummydata">dummydata</string>
+</resources>
