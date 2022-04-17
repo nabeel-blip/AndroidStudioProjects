@@ -1,6 +1,5 @@
 package com.example.recycleandcardview;
 
-
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -12,7 +11,7 @@ public class Student implements Parcelable {
 
     public Student( String name, String department,int image ,String Roll ) {
         this.name = name;
-        this.image = (image!=0 ? image:R.drawable.images);;
+        this.image = (image !=0 ? image:R.drawable.images);
         this.department = department;
         this.RollNo = Roll;
     }
@@ -57,7 +56,6 @@ public class Student implements Parcelable {
     public void setName(String name) {
         this.name = name;
     }
-
 
     @Override
     public int describeContents() {

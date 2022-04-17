@@ -1,6 +1,5 @@
 package com.example.recycleandcardview;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,12 +7,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-
 public class RecyclerViewStudentCardAdapter extends RecyclerView.Adapter<RecyclerViewStudentCardAdapter.StudentCardViewHolder>{
      Student content;
     public RecyclerViewStudentCardAdapter(Student content) {
-        Log.d("RecyclerView","Created");
         this.content = content;
     }
 
@@ -26,11 +22,9 @@ public class RecyclerViewStudentCardAdapter extends RecyclerView.Adapter<Recycle
 
     @Override
     public void onBindViewHolder(@NonNull StudentCardViewHolder holder, int position) {
-        Log.d("second","Value:"+position);
 
-   switch (position){
+       switch (position){
             case 0:
-                Log.d("test",content.getName());
                 holder.textview1.setText("Name");
                 holder.textview2.setText(content.getName());
             break;
@@ -45,12 +39,10 @@ public class RecyclerViewStudentCardAdapter extends RecyclerView.Adapter<Recycle
                 break;
         }
     }
-
     @Override
-    public int getItemCount() {
+    public int getItemCount()   {
         return 3;
     }
-
     public class StudentCardViewHolder extends RecyclerView.ViewHolder{
         private TextView textview1;
         private TextView textview2;
@@ -59,8 +51,6 @@ public class RecyclerViewStudentCardAdapter extends RecyclerView.Adapter<Recycle
             super(itemView);
             textview1  = itemView.findViewById(R.id.studentCard_tv_heading);
             textview2  = itemView.findViewById(R.id.studentCard_tv_description);
-
-
         }
     }
 

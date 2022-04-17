@@ -1,17 +1,13 @@
 package com.example.recycleandcardview;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
+import android.content.Intent;;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>{
@@ -27,7 +23,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        Log.d("frstview","Value:"+position);
 
         final Student student = studentList.get(position);
         holder.name.setText(student.getName());

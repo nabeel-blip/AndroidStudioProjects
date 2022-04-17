@@ -4,7 +4,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,9 +23,9 @@ public class ViewStudent extends AppCompatActivity {
         });
         RecyclerView studentAttributes = findViewById(R.id.Student_card_RV);
         studentAttributes.setLayoutManager(new LinearLayoutManager(this));
-        Student temp = intent.getParcelableExtra("student");
-        Log.d("tett",temp.getName());
-        studentAttributes.setAdapter(new RecyclerViewStudentCardAdapter(intent.getParcelableExtra("student")));
+        Student student = intent.getParcelableExtra("student");
+        findViewById(R.id.View_studet_IV_pfp).setBackgroundResource(student.getImage());
+        studentAttributes.setAdapter(new RecyclerViewStudentCardAdapter(student));
     }
 
 }

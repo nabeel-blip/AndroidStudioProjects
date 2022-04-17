@@ -3,11 +3,7 @@ package com.example.recycleandcardview;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareMovie() {
-        student.add(new Student("Nabeel Hassan Khan","CS",0,"18f0242"));
-        student.add(new Student("asdfff asdffff adfd","CS",0,"18f0332"));
+        student.add(new Student("Nabeel Hassan Khan","CS",0,"18F0242"));
+        student.add(new Student("Buhamad Shanawaz Bashir","BBA",0,"18F7945"));
+        student.add(new Student("Arman Gandalf","BBA",0,"18F1067"));
+        student.add(new Student("Eustachys Kenta","EE",0,"18F3066"));
+        student.add(new Student("Ji-Min Grimwald","MBA",0,"18F6785"));
     }
 }
