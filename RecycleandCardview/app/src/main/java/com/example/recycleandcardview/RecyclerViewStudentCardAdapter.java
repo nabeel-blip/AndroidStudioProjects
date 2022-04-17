@@ -16,7 +16,7 @@ public class RecyclerViewStudentCardAdapter extends RecyclerView.Adapter<Recycle
     @NonNull
     @Override
     public StudentCardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recylerveiw_student_card,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recylerveiw_student_card_layout,parent,false);
         return new StudentCardViewHolder(view);
     }
 
