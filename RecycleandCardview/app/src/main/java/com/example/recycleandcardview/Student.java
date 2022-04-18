@@ -15,6 +15,9 @@ public class Student implements Parcelable {
         this.department = department;
         this.RollNo = Roll;
     }
+    public Student(){
+        this.image = R.drawable.images;
+    };
 
     protected Student(Parcel in) {
         image = in.readInt();

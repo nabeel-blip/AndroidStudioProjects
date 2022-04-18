@@ -16,5 +16,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction().replace(R.id.main_fl,new VeiwStudentListFragment()).commit();
     }
-
 }
